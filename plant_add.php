@@ -76,7 +76,7 @@ $result_place= mysqli_query($conn,$sql_place);
 
                     <div class="panel heading-border">
 
-                        <form method="post" action="plant_add_in.php" id="admin-form">
+                        <form method="post" action="plant_add_in.php" id="admin-form" enctype="multipart/form-data">
 
                             <div class="panel-body bg-light">
 

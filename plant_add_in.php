@@ -8,13 +8,14 @@ $plant_bad = $_POST['plant_bad'];
 $category_id =$_POST['category_id'];
 $place_id =$_POST['place_id'];
 $plant_createtime = time();
+$image_name = "";
 
 if(!empty($_FILES)){
     if($_FILES['plant_image']['name']!=""){
         $file_name=$_FILES['plant_image']['name'];
-    $file_tmp_name=$_FILES['plant_image']['tmp_name'];
-    $image_name="upload/".time().".".substr(strrchr($file_name, '.'), 1);
-    move_uploaded_file($file_tmp_name, $image_name);
+        $file_tmp_name=$_FILES['plant_image']['tmp_name'];
+        $image_name="upload/".time().".".substr(strrchr($file_name, '.'), 1);
+        move_uploaded_file($file_tmp_name, $image_name);
     }
 }
 
