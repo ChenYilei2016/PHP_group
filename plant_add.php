@@ -145,6 +145,12 @@ $result_place= mysqli_query($conn,$sql_place);
                                         <i class="arrow double"></i>
                                     </label>
                                 </div>
+                                <div class="section-divider mt20 mb40">
+                                    <span> 选择生物图片 </span>
+                                </div>
+                                <div class="section" id="spy3">
+                                    <input type="file" class="button bg-blue margin-left" name="plant_image" id="image1" value="+ 浏览上传"  style="float:left;" >
+                                </div>
                                 <!-- .section-divider -->
                                 <div class="section row" id="items">
                                     <div>

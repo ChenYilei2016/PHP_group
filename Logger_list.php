@@ -9,7 +9,7 @@ $pageSize = 5; //5页的大小
 $pageTotalElement = mysqli_num_rows($result_data);
 $pageTotalPages = $pageTotalElement % $pageSize == 0 ? (int)($pageTotalElement/$pageSize) : (int)($pageTotalElement/$pageSize) + 1 ;
 
-//得到页面中的页数
+//得到页面中的页数 以0开始
 $page = 1;
 if(!empty($_GET['page']) ){
     $page = $_GET['page'];

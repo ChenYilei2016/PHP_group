@@ -9,8 +9,18 @@ $category_id =$_POST['category_id'];
 $place_id =$_POST['place_id'];
 $plant_createtime = time();
 
+if(!empty($_FILES)){
+    if($_FILES['plant_image']['name']!=""){
+        $file_name=$_FILES['plant_image']['name'];
+    $file_tmp_name=$_FILES['plant_image']['tmp_name'];
+    $image_name="upload/".time().".".substr(strrchr($file_name, '.'), 1);
+    move_uploaded_file($file_tmp_name, $image_name);
+    }
+}
+
 //插入plant表
-$sql = "insert into plant (category_id,place_id,plant_name,plant_identity,plant_bad,plant_createtime) VALUES (".$category_id.",".$place_id.",'".$plant_name."','".$plant_identity."','".$plant_bad."',".$plant_createtime.")";
+$sql = "insert into plant (category_id,place_id,plant_name,plant_identity,plant_bad,plant_createtime,plant_image) VALUES (".$category_id.",".$place_id.",'".$plant_name."','".$plant_identity."','".$plant_bad."',"
+  .$plant_createtime.",'".$image_name."'".")";
 
 if(mysqli_query($conn,$sql)){
     echo "保存数据成功";

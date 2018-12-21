@@ -48,22 +48,22 @@
         <div class="leftnav">
             <h2><span class="icon-user"></span>&nbsp;&nbsp;分类管理</h2>
             <ul style="display:block">
-                <li><a href="category_list.php"><span class="icon-caret-right"></span>分类列表</a></li>
-                <li><a href="category_add.php"><span class="icon-caret-right"></span>添加分类</a></li>
+                <a class="btn btn-info" href="category_list.php"><span class="icon-caret-right"></span>分类列表</a>
+                <a class="btn btn-info" href="category_add.php"><span class="icon-caret-right"></span>添加分类</a>
             </ul>
             <h2><span class="icon-user"></span>&nbsp;&nbsp;地区管理</h2>
             <ul style="display:block">
-                <li><a href="place_list.php"><span class="icon-caret-right"></span>地区列表</a></li>
-                <li><a href="place_add.php"><span class="icon-caret-right"></span>添加地区</a></li>
+                <a class="btn btn-info" href="place_list.php"><span class="icon-caret-right"></span>地区列表</a>
+                <a class="btn btn-info" href="place_add.php"><span class="icon-caret-right"></span>添加地区</a>
             </ul>
             <h2><span class="icon-pencil-square-o"></span>&nbsp;&nbsp;生物管理</h2>
             <ul>
-                <li><a href="plant_list.php"><span class="icon-caret-right"></span>生物列表</a></li>
-                <li><a href="plant_add.php"><span class="icon-caret-right"></span>添加生物</a></li>
+                <a class="btn btn-info" href="plant_list.php"><span class="icon-caret-right"></span>生物列表</a>
+                <a class="btn btn-info" href="plant_add.php"><span class="icon-caret-right"></span>添加生物</a>
             </ul>
             <h2><span class="icon-pencil-square-o"></span>&nbsp;&nbsp;日志管理</h2>
             <ul>
-                <li><a href="Logger_list.php" ><span class="icon-caret-right"></span>日志列表</a></li>
+                <li><a class="btn btn-info" href="Logger_list.php" ><span class="icon-caret-right"></span>日志列表</a></li>
             </ul>
         </div>
         <!-- End: Sidebar Menu -->

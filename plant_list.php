@@ -89,6 +89,7 @@
                   <thead>
                     <tr class="">
                         <th class="hidden-xs text-center">生物编号</th>
+                        <th class="hidden-xs text-center">生物图片</th>
                         <th class="hidden-xs text-center">生物名称</th>
                         <th class="hidden-xs text-center">生物分类</th>
                         <th class="hidden-xs text-center">危害地区</th>
@@ -101,7 +102,8 @@
                         while($row = mysqli_fetch_array($result) ){
                       ?>
                             <tr class="message-unread">
-                                <td class=""><?php echo $row['plant_id']?></td>
+                                <td class="text-center"><?php echo $row['plant_id']?></td>
+                                <td class="text-center"><img src="<?php echo $row['plant_image']==''?'images/none.jpg':$row['plant_image']; ?>" height="40" width="50"></td>
                                 <td class="text-center"><?php echo $row['plant_name']?></td>
                                 <td class="text-center"><?php echo $row['category_name']?></td>
                                 <td class="text-center"><?php echo $row['place_name']?></td>

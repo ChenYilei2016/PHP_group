@@ -1,6 +1,4 @@
 <?php
-
-//..
 include_once ("inc_header.php");
 include_once ("login_check.php");
 
@@ -55,7 +53,7 @@ $result = mysqli_query($conn,$sql);
             <div class="tray tray-center">
                 <!-- Begin: Content Header -->
                 <div class="content-header">
-                    <h1>哈哈哈哈啊哈哈暂时没写东西 主显示页</h1>
+                    <h1>没写东西 主显示页</h1>
                     <h1>李可以用右边的选项进行页面跳转</h1>
                     <p class="lead"></p>
                 </div>
