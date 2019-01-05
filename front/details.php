@@ -1283,7 +1283,10 @@ textarea {
                         <img src="<?php echo $row['plant_image']==''?'../images/none.jpg':'../'.$row['plant_image']; ?>" style="width: 628px; height: 437px">
                     </figure>
                     <figure class="white">
-                        <img src="<?php echo $row['plant_image']==''?'../images/none.jpg':'../'.$row['plant_image']; ?>" style="width: 628px; height: 437px">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                     </figure>
                 <div class="wrapper-text-description" style="top: 75px;">
 
@@ -1302,11 +1305,14 @@ textarea {
                         <div class="text-weight"><?=date("Y-m-d H:i:s",$row['plant_createtime']) ?></div>
                     </div>
 
-<!--                    <div class="wrapper-desc">-->
+                    <div class="wrapper-desc">
 <!--                    	<div class="icon-desc"><img src="img/icon-desc.svg" alt="" width="24" height="24"/></div>-->
-<!--                        <div class="text-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </div>-->
-<!--                    </div>-->
-
+                        <div class="text-desc"><b>物种特征&nbsp;:&nbsp;</b><?=$row['plant_identity']?></div>
+                    </div>
+                    <div class="wrapper-desc">
+                        <!--                    	<div class="icon-desc"><img src="img/icon-desc.svg" alt="" width="24" height="24"/></div>-->
+                        <div class="text-desc"><b>物种危害&nbsp;:&nbsp;</b><?=$row['plant_bad']?></div>
+                    </div>
 			</div>
 		</div>
 
