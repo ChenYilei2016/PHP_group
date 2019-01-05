@@ -17,7 +17,7 @@ $result = mysqli_query($conn,$sql);
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Home</title>
+    <title>农林外来危害物种展示</title>
 
     <!-- Behavioral Meta Data -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -60,7 +60,6 @@ $result = mysqli_query($conn,$sql);
                 <div class="top-rated object">主显示页</div>
                 <div id="fleche-nav-1"></div>
             </div>
-
         </div>
         <div id="wrapper-bouton-icon">
 
@@ -124,7 +123,7 @@ $result = mysqli_query($conn,$sql);
                     while( $row = mysqli_fetch_array($result) ){
                         ?>
                         <figure class="white">
-                            <a href="details.php?plant_id=">
+                            <a href="details.php?plant_id=<?=$row['plant_id']?>">
                                 <img  src="../<?=empty($row['plant_image'])?'images/none.jpg':$row['plant_image']?>" style="width:240px;height:180px;"/>
                                 <dl>
                                     <dt style="text-align: center">Plant Identity</dt>

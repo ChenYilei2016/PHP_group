@@ -5,6 +5,17 @@
  * Date: 2019/1/5/0014
  * Time: 11:20
  */
+    include_once("../inc_header.php");
+
+    $plant_id = $_GET['plant_id'];
+    $sql_ = 'select * from plant where plant_id = '.$plant_id;
+    $result=  mysqli_query($conn,$sql_);
+    if (!$result) {
+
+        printf("Error: %s\n", mysqli_error($conn));
+        exit();
+    }
+    $row = mysqli_fetch_array($result);
 
 ?>
 
@@ -361,7 +372,7 @@ body,html{
 	width:20%;
 	right:7.5%;
 	height:auto;
-	margin-top:85px;
+	margin-top:0px;
 }
 
 .wrapper-view,.wrapper-file,.wrapper-weight,.wrapper-desc,.wrapper-download{
@@ -637,8 +648,8 @@ textarea.placeholder {
 	float:left;
 	width:68px;
 	height:68px;
-	background: url(img/title-icon-ps.svg) no-repeat;
-	margin-right:20px;
+	background: url(img/icon-font.svg) no-repeat;
+	margin-right:0px;
 }
 
 .title-text{
@@ -1170,15 +1181,16 @@ textarea {
 @media only screen and (max-width: 320px) {
 
 }
-
-
-
 </style>
+
+    <?php
+
+    ?>
 
 </head>
 
 <body>
-
+<!--cyl-->
 <a name="ancre"></a>
 
 <!-- CACHE -->
@@ -1186,47 +1198,31 @@ textarea {
 <!-- HEADER -->
 
 <div id="wrapper-header">
-    <div id="main-header" class="object">
-<!--        <a href="index.html"><div id="logo"><img src="img/logo-burst.svg" alt="logo burstfly" height="38" width="90"></div></a>-->
-        <div id="main_tip_search">
-            <form>
-                <input type="text" name="search" id="tip_search_input" placeholder="和后台的搜索一样懒的弄" list="search" autocomplete=off required>
-            </form>
-        </div>
+    <div id="main-header" class="object" style="margin-top: 20px">
+        <a href="index.php" style="vertical-align: center;  color: white;">农林外来危害物种详情</a>
         <div id="stripes"></div>
     </div>
 </div>
 
 <!-- NAVBAR -->
-
 <div id="wrapper-navbar">
     <div class="navbar object">
         <div id="wrapper-sorting">
             <div id="wrapper-title-1">
-                <div class="top-rated object">Top-rated</div>
+                <div class="top-rated object"><a href="index.php">主显示页</a></div>
                 <div id="fleche-nav-1"></div>
             </div>
-
             <div id="wrapper-title-2">
-                <a href="#"><div class="recent object">Recent</div></a>
+                <a href="#"><div class="recent object">详细介绍</div></a>
                 <div id="fleche-nav-2"></div>
-            </div>
-
-            <div id="wrapper-title-3">
-                <a href="#"><div class="oldies object">Oldies</div></a>
-                <div id="fleche-nav-3"></div>
             </div>
         </div>
         <div id="wrapper-bouton-icon">
-            <div id="bouton-ai"><img src="img/icon-ai.svg" alt="illustrator" title="Illustrator" height="28" width="28"></div>
-            <div id="bouton-psd"><img src="img/icon-psd.svg" alt="photoshop" title="Photoshop" height="28" width="28"></div>
-            <div id="bouton-theme"><img src="img/icon-themes.svg" alt="theme" title="Theme" height="28" width="28"></div>
-            <div id="bouton-font"><img src="img/icon-font.svg" alt="font" title="Font" height="28" width="28"></div>
-            <div id="bouton-photo"><img src="img/icon-photo.svg" alt="photo" title="Photo" height="28" width="28"></div>
-            <div id="bouton-premium"><img src="img/icon-premium.svg" alt="premium" title="Premium" height="28" width="28"></div>
+
         </div>
     </div>
 </div>
+
 
 <!-- FILTER -->
 
@@ -1277,48 +1273,39 @@ textarea {
 			<div id="main-container-image">
 
                 <div class="title-item">
-                	<div class="title-icon"></div>
-                    <div class="title-text">Ipad Pro Mockup </div>
-                    <div class="title-text-2">Sept 25, 2015 by Onuur</div>
+                    <div class="title-text"><?=$row['plant_name']?></div>
+                    <div class="title-text-2"><?=date("Y-m-d H:i:s",$row['plant_createtime']) ?></div>
                 </div>
 
 
 				<div class="work">
 					<figure class="white">
-							 <img src="img/psd-4.jpg" alt="" />
-                         <div id="wrapper-part-info">
-                             <div class="part-info-image-single">
-                                <img src="img/mockup-1.jpg" alt="" width="628" height="437"/>
-                             </div>
-						 </div>
+                        <img src="<?php echo $row['plant_image']==''?'../images/none.jpg':'../'.$row['plant_image']; ?>" style="width: 628px; height: 437px">
                     </figure>
-
-                <div class="wrapper-text-description">
+                    <figure class="white">
+                        <img src="<?php echo $row['plant_image']==''?'../images/none.jpg':'../'.$row['plant_image']; ?>" style="width: 628px; height: 437px">
+                    </figure>
+                <div class="wrapper-text-description" style="top: 75px;">
 
                 	<div class="wrapper-view">
                     	<div class="icon-view"><img src="img/icon-eye.svg" alt="" width="24" height="16"/></div>
-                        <div class="text-view">2,451 views</div>
+                        <div class="text-view">6666 views</div>
                     </div>
 
                 	<div class="wrapper-file">
                     	<div class="icon-file"><img src="img/icon-psdfile.svg" alt="" width="21" height="21"/></div>
-                        <div class="text-file">Photoshop</div>
+                        <div class="text-file"><?=$row['plant_name']?></div>
                     </div>
 
                     <div class="wrapper-weight">
                     	<div class="icon-weight"><img src="img/icon-weight.svg" alt="" width="20" height="23"/></div>
-                        <div class="text-weight">23 Mo</div>
+                        <div class="text-weight"><?=date("Y-m-d H:i:s",$row['plant_createtime']) ?></div>
                     </div>
 
-                    <div class="wrapper-desc">
-                    	<div class="icon-desc"><img src="img/icon-desc.svg" alt="" width="24" height="24"/></div>
-                        <div class="text-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </div>
-                    </div>
-
-                    <div class="wrapper-download">
-                    	<div class="icon-download"><img src="img/icon-download.svg" alt="" width="19" height="26"/></div>
-                        <div class="text-download"><a href="#"><b>Download</b></a></div>
-                    </div>
+<!--                    <div class="wrapper-desc">-->
+<!--                    	<div class="icon-desc"><img src="img/icon-desc.svg" alt="" width="24" height="24"/></div>-->
+<!--                        <div class="text-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </div>-->
+<!--                    </div>-->
 
 			</div>
 		</div>
