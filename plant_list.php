@@ -3,11 +3,11 @@ include_once ("inc_header.php");
 include_once ("login_check.php");
 
 //生物表 - 分类表 - 地区表
-if(empty($_POST['searchword'])){
+if(empty($_GET['searchword'])){
     $sql = 'select * from plant join category on plant.category_id = category.category_id join place on place.place_id = plant.place_id';
 }else{
     //有搜索数据
-    $searchword = $_POST['searchword'];
+    $searchword = $_GET['searchword'];
     $sql = 'select * from plant join category on plant.category_id = category.category_id join place on place.place_id = plant.place_id '.
         'where plant_name like \'%'.$searchword.'%\' or plant_bad like \'%'.$searchword.'%\' or plant_identity like \'%'.$searchword.'%\'';
 }
@@ -78,9 +78,9 @@ $result = mysqli_query($conn,$sql);
                             <!--                            搜索-->
                             <div class="row">
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                    <form method="post" action="plant_list.php" class="navbar-form navbar-right" role="search">
+                                    <form method="GET" action="plant_list.php" class="navbar-form navbar-right" role="search">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="searchword"/>
+                                            <input type="text" class="form-control" name="searchword" value="<?=empty($_GET['searchword'])?'':$_GET['searchword'] ?>"/>
                                         </div> <button type="submit" class="btn btn-info">查询关键字</button>
                                     </form>
                                 </div>
