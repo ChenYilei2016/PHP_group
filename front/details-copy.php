@@ -59,8 +59,8 @@ a {
 	text-decoration:none;
 }
 
-ul {
-	list-style-type: none;
+ul { 
+	list-style-type: none; 
 	margin:0;
 	padding:0;
 }
@@ -102,13 +102,13 @@ body,html{
 ::-webkit-scrollbar {
     width: 9px;
 }
-
+ 
 ::-webkit-scrollbar-track {
     background:#eee;
     border: thin solid lightgray;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) inset;
 }
-
+ 
 ::-webkit-scrollbar-thumb {
     background:#999;
     border: thin solid gray;
@@ -361,7 +361,7 @@ body,html{
 	width:20%;
 	right:7.5%;
 	height:auto;
-	margin-top:85px;
+	margin-top:85px;	
 }
 
 .wrapper-view,.wrapper-file,.wrapper-weight,.wrapper-desc,.wrapper-download{
@@ -418,8 +418,8 @@ body,html{
 .text-download a{
 	color:#A1A1A1;
 	transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out; 
+    -moz-transition: all 0.2s ease-in-out; 
     -o-transition: all 0.2s ease-in-out;
 }
 
@@ -491,7 +491,7 @@ body,html{
 	width:65px;
 	height:65px;
 	background: url(img/avatar.png) no-repeat;
-	top:0;
+	top:0;	
 }
 
 .image-reply-post{background: url(img/avatar.png) no-repeat;}
@@ -603,24 +603,24 @@ fieldset {
 	border:none;
 }
 
-textarea {
+textarea { 
 	resize: vertical;
-    max-height:100px;
+    max-height:100px; 
     min-height:100px;
 }
 
 textarea {
     color: #999;
 }
-
+ 
 textarea:-moz-placeholder {
     color: #999;
 }
-
+ 
 textarea::-webkit-input-placeholder {
     color: #999;
 }
-
+ 
 textarea.placeholder {
     color: #999;
 }
@@ -693,8 +693,8 @@ textarea.placeholder {
 
 .premium-ressource a,.themes a,.psd a,.ai a,.font a,.photo a{
 	transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out; 
+    -moz-transition: all 0.2s ease-in-out; 
     -o-transition: all 0.2s ease-in-out;
 }
 
@@ -813,7 +813,7 @@ textarea.placeholder {
 	border-radius: 5px;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-    box-shadow: none;
+    box-shadow: none; 
 	outline: 0;
 	background: url(img/icon-newsletter.svg) no-repeat 10px 9px;
 	margin-left:20px;
@@ -843,7 +843,7 @@ textarea.placeholder {
 	border-radius: 5px;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-    box-shadow: none;
+    box-shadow: none; 
 	outline: 0;
 	margin: 0;
 	background: url(img/icon-search.svg) no-repeat 12px 7px;
@@ -930,7 +930,7 @@ textarea.placeholder {
 /*----------------------------*/
 
 /* Others wide screen -2 */
-
+ 
 @media only screen and (max-width: 2000px) {
 #main-container-menu {
 	display:none;
@@ -938,7 +938,7 @@ textarea.placeholder {
 }
 
 /* Others wide screen */
-
+ 
 @media only screen and (max-width: 1200px) {
 #main-header,.navbar,.container,.container-footer,.thank,.oldnew,.copyright {
 	width:940px;
@@ -950,7 +950,7 @@ textarea.placeholder {
 }
 
 /* Small viewports — Old monitors, netbooks, tablets (landscape), etc. */
-
+ 
 @media only screen and (max-width: 965px) {
 #main-header,.navbar,.container,.container-footer,.thank,.oldnew,.copyright {
 	width:835px;
@@ -996,7 +996,7 @@ textarea.placeholder {
 }
 
 /* Smaller viewports — more tablets, old monitors */
-
+ 
 @media only screen and (max-width: 860px) {
 #main-header,.navbar,.container,.container-footer,.thank,.oldnew,.copyright {
 	width:715px;
@@ -1012,12 +1012,12 @@ textarea.placeholder {
 }
 
 /* Even smaller viewports — more tablets, etc. */
-
+ 
 @media only screen and (max-width: 740px) {
 #main-header,.navbar,.container,.container-footer,.thank,.oldnew,.copyright {
 	width:585px;
 	margin-left:-292.5px;
-}
+}   
 #wrapper-bouton-icon,#main_tip_search,#text-search {
 	display:none;
 }
@@ -1053,12 +1053,12 @@ textarea.placeholder {
 }
 
 /* Mobile phones (Landscape) and Tablets (Portrait) */
-
+ 
 @media only screen and (max-width: 610px) {
 #main-header,.navbar,.container,.container-footer,.thank,.oldnew,.copyright {
 	width:455px;
 	margin-left:-227.5px;
-}
+} 
 #wrapper-sorting{
 	position:relative;
 	width:300px;
@@ -1092,7 +1092,7 @@ textarea.placeholder {
 }
 
 /* Mobile phones (Landscape) and Tablets (Portrait) */
-
+ 
 @media only screen and (max-width: 480px) {
 #main-header,.navbar,.container,.container-footer,.thank,.oldnew,.copyright {
 	width:295px;
@@ -1166,7 +1166,7 @@ textarea {
 }
 }
 /* Mobile phones (iphone4/5)*/
-
+ 
 @media only screen and (max-width: 320px) {
 
 }
@@ -1183,16 +1183,17 @@ textarea {
 
 <!-- CACHE -->
 <div class="cache"></div>
+
 <!-- HEADER -->
 
 <div id="wrapper-header">
-    <div id="main-header" class="object">
-<!--        <a href="index.html"><div id="logo"><img src="img/logo-burst.svg" alt="logo burstfly" height="38" width="90"></div></a>-->
-        <div id="main_tip_search">
-            <form>
-                <input type="text" name="search" id="tip_search_input" placeholder="和后台的搜索一样懒的弄" list="search" autocomplete=off required>
-            </form>
-        </div>
+	<div id="main-header" class="object">
+		<a href="index.html"><div id="logo"><img src="img/logo-burst.svg" alt="logo burstfly" height="38" width="90"></div></a>
+        <div id="main_tip_search"> 
+			<form>
+				<input type="text" name="search" id="tip_search_input" list="search" autocomplete=off required>
+			</form>
+		</div>
         <div id="stripes"></div>
     </div>
 </div>
@@ -1200,165 +1201,216 @@ textarea {
 <!-- NAVBAR -->
 
 <div id="wrapper-navbar">
-    <div class="navbar object">
-        <div id="wrapper-sorting">
+		<div class="navbar object">
+    		<div id="wrapper-sorting">
             <div id="wrapper-title-1">
-                <div class="top-rated object">Top-rated</div>
-                <div id="fleche-nav-1"></div>
-            </div>
-
+            <div class="top-rated object">Top-rated</div>
+            	<div id="fleche-nav-1"></div>
+    		</div>
+            
             <div id="wrapper-title-2">
-                <a href="#"><div class="recent object">Recent</div></a>
+            <a href="#"><div class="recent object">Recent</div></a>
                 <div id="fleche-nav-2"></div>
-            </div>
-
+    		</div>
+            
             <div id="wrapper-title-3">
-                <a href="#"><div class="oldies object">Oldies</div></a>
+            <a href="#"><div class="oldies object">Oldies</div></a>
                 <div id="fleche-nav-3"></div>
+    		</div>
             </div>
-        </div>
-        <div id="wrapper-bouton-icon">
-            <div id="bouton-ai"><img src="img/icon-ai.svg" alt="illustrator" title="Illustrator" height="28" width="28"></div>
-            <div id="bouton-psd"><img src="img/icon-psd.svg" alt="photoshop" title="Photoshop" height="28" width="28"></div>
-            <div id="bouton-theme"><img src="img/icon-themes.svg" alt="theme" title="Theme" height="28" width="28"></div>
-            <div id="bouton-font"><img src="img/icon-font.svg" alt="font" title="Font" height="28" width="28"></div>
-            <div id="bouton-photo"><img src="img/icon-photo.svg" alt="photo" title="Photo" height="28" width="28"></div>
-            <div id="bouton-premium"><img src="img/icon-premium.svg" alt="premium" title="Premium" height="28" width="28"></div>
+            <div id="wrapper-bouton-icon">
+            	<div id="bouton-ai"><img src="img/icon-ai.svg" alt="illustrator" title="Illustrator" height="28" width="28"></div>
+            	<div id="bouton-psd"><img src="img/icon-psd.svg" alt="photoshop" title="Photoshop" height="28" width="28"></div>
+            	<div id="bouton-theme"><img src="img/icon-themes.svg" alt="theme" title="Theme" height="28" width="28"></div>
+            	<div id="bouton-font"><img src="img/icon-font.svg" alt="font" title="Font" height="28" width="28"></div>
+            	<div id="bouton-photo"><img src="img/icon-photo.svg" alt="photo" title="Photo" height="28" width="28"></div>
+            	<div id="bouton-premium"><img src="img/icon-premium.svg" alt="premium" title="Premium" height="28" width="28"></div>
+			</div>
+    	</div>
+    </div>
+
+<!-- FILTER -->	
+
+	<div id="main-container-menu" class="object">
+    	<div class="container-menu">
+        	
+            <div id="main-cross">
+            	<div id="cross-menu"></div>
+            </div>
+            
+            <div id="main-small-logo">
+            	<div class="small-logo"></div>
+            </div>
+            
+            <div id="main-premium-ressource">
+                <div class="premium-ressource"><a href="#">Premium Resources</a></div>
+            </div>
+            
+            <div id="main-themes">
+                <div class="themes"><a href="#">Latest themes</a></div>
+            </div>
+            
+            <div id="main-psd">
+                <div class="psd"><a href="#">PSD Goodies</a></div>
+            </div>
+                
+            <div id="main-ai">
+                <div class="ai"><a href="#">Illustrator freebies</a></div>
+            </div>
+            
+            <div id="main-font">
+                <div class="font"><a href="#">Free fonts</a></div>
+            </div>
+            
+            <div id="main-photo">
+                <div class="photo"><a href="#">Free stock photos</a></div>
+            </div>
+            
         </div>
     </div>
-</div>
 
-<!-- FILTER -->
-
-<div id="main-container-menu" class="object">
-    <div class="container-menu">
-
-        <div id="main-cross">
-            <div id="cross-menu"></div>
-        </div>
-
-        <div id="main-small-logo">
-            <div class="small-logo"></div>
-        </div>
-
-        <div id="main-premium-ressource">
-            <div class="premium-ressource"><a href="#">Premium Resources</a></div>
-        </div>
-
-        <div id="main-themes">
-            <div class="themes"><a href="#">Latest themes</a></div>
-        </div>
-
-        <div id="main-psd">
-            <div class="psd"><a href="#">PSD Goodies</a></div>
-        </div>
-
-        <div id="main-ai">
-            <div class="ai"><a href="#">Illustrator freebies</a></div>
-        </div>
-
-        <div id="main-font">
-            <div class="font"><a href="#">Free fonts</a></div>
-        </div>
-
-        <div id="main-photo">
-            <div class="photo"><a href="#">Free stock photos</a></div>
-        </div>
-
-    </div>
-</div>
 
 <!-- PORTFOLIO -->
 
 	<div id="wrapper-container">
-
+    
 		<div class="container object">
 
 			<div id="main-container-image">
-
+            	
                 <div class="title-item">
                 	<div class="title-icon"></div>
                     <div class="title-text">Ipad Pro Mockup </div>
                     <div class="title-text-2">Sept 25, 2015 by Onuur</div>
                 </div>
-
-
+                
+     			       
 				<div class="work">
 					<figure class="white">
 							 <img src="img/psd-4.jpg" alt="" />
                          <div id="wrapper-part-info">
                              <div class="part-info-image-single">
                                 <img src="img/mockup-1.jpg" alt="" width="628" height="437"/>
+                                <img src="img/mockup-2.jpg" alt="" width="628" height="437"/>
+                                <img src="img/mockup-3.jpg" alt="" width="628" height="437"/>
                              </div>
 						 </div>
-                    </figure>
-
+                    </figure>	
+				
                 <div class="wrapper-text-description">
-
+                
                 	<div class="wrapper-view">
                     	<div class="icon-view"><img src="img/icon-eye.svg" alt="" width="24" height="16"/></div>
                         <div class="text-view">2,451 views</div>
                     </div>
-
+                
                 	<div class="wrapper-file">
                     	<div class="icon-file"><img src="img/icon-psdfile.svg" alt="" width="21" height="21"/></div>
                         <div class="text-file">Photoshop</div>
                     </div>
-
+                    
                     <div class="wrapper-weight">
                     	<div class="icon-weight"><img src="img/icon-weight.svg" alt="" width="20" height="23"/></div>
                         <div class="text-weight">23 Mo</div>
                     </div>
-
+                    
                     <div class="wrapper-desc">
                     	<div class="icon-desc"><img src="img/icon-desc.svg" alt="" width="24" height="24"/></div>
                         <div class="text-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </div>
                     </div>
-
+                    
                     <div class="wrapper-download">
                     	<div class="icon-download"><img src="img/icon-download.svg" alt="" width="19" height="26"/></div>
                         <div class="text-download"><a href="#"><b>Download</b></a></div>
                     </div>
-
-			</div>
+                    
+                    <div class="wrapper-morefrom">
+                    	<div class="text-morefrom">More from .psd</div>
+                        <div class="image-morefrom">
+                        	<a href="#"><div class="image-morefrom-1"><img src="img/psd-1.jpg" alt="" width="430" height="330"/></div></a>
+                            <a href="#"><div class="image-morefrom-2"><img src="img/psd-2.jpg" alt="" width="430" height="330"/></div></a>
+                            <a href="#"><div class="image-morefrom-3"><img src="img/psd-3.jpg" alt="" width="430" height="330"/></div></a>
+                            <a href="#"><div class="image-morefrom-4"><img src="img/psd-6.jpg" alt="" width="430" height="330"/></div></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                	<div class="post-reply">
+                    	<div class="image-reply-post"></div>
+                    	<div class="name-reply-post">Igor vlademir</div>
+                    	<div class="text-reply-post">Awesome mockup, i like it very much ! It will help me for my website i was looking for since few days. Thank you a lot.</div>
+                	</div>
+                    
+                    <div class="post-reply-2">
+                    	<div class="image-reply-post-2"></div>
+                    	<div class="name-reply-post-2">Nathan Shaw</div>
+                    	<div class="text-reply-post-2">Well done ! I like the way you did it. Awesome ! </div>
+                	</div>
+                    
+                	<div class="post-send">
+                    	<div id="main-post-send"> 
+                            <div id="title-post-send">Add your comment</div>
+							<form id="contact" method="post" action="/onclickprod/formsubmit_op.asp">
+    							<fieldset>
+									<p><textarea id="message" name="message" maxlength="500" placeholder="Votre Message" tabindex="5" cols="30" rows="4"></textarea></p>
+								</fieldset>
+								<div style="text-align:center;"><input type="submit" name="envoi" value="Envoyer" /></div>
+  							</form>
+                        </div>
+					</div>
+                </div>
+			</div>	
 		</div>
-
-
-        <div id="main-container-footer">
-            <div class="container-footer">
-
-                <div id="row-1f">
-                    <div class="text-row-1f">
-                        <span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">农林外来危害物种前台</span><br>农林外来危害物种前台
-                    </div>
-                </div>
-                <div id="row-2f">
-                    <div class="text-row-1f">
-                        <span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">农林外来危害物种前台</span><br>农林外来危害物种前台
-                    </div>
-                </div>
-                <div id="row-3f">
-                    <div class="text-row-1f">
-                        <span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">好像没什么好写的</span><br>好像没什么好写的
-                    </div>
-                </div>
+         
+            
+	<div id="wrapper-thank">
+    	<div class="thank">
+        	<div class="thank-text">bu<span style="letter-spacing:-5px;">rs</span>tfly</div>
+    	</div>
+	</div>
+	    
+	<div id="main-container-footer">
+		<div class="container-footer">
+        	
+             <div id="row-1f">
+            	<div class="text-row-1f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">What is Burstfly</span><br>Burstfly is just a blog showcasing hand-picked free themes, design stuff, free fonts and other resources for web designers.</div>
             </div>
-        </div>
-
-
-        <div id="wrapper-copyright">
-            <div class="copyright">
-                <div class="copy-text object">Copyright &copy; 2016.Company name All rights reserved </div>
-
-                <div class="wrapper-navbouton">
-                    <div class="google object">g</div>
-                    <div class="facebook object">f</div>
-                    <div class="linkin object">i</div>
-                    <div class="dribbble object">d</div>
-                </div>
+            
+            <div id="row-2f">
+            	<div class="text-row-2f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">How does it work</span><br>Burstfly offers you all the latest freebies found all over the fourth corners without to pay.</div>
             </div>
-        </div>
+            
+            <div id="row-3f">
+            	<div class="text-row-3f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Get in touch!</span><br>Subscribe our RSS or follow us on Facebook, Google+, Pinterest or Dribbble to keep updated.</div>
+            </div>
+            
+            <div id="row-4f">
+            	<div class="text-row-4f"><span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">Newsletter</span><br>You will be informed monthly about the latest content avalaible.</div>
 
+				<div id="main_tip_newsletter"> 
+					<form>
+						<input type="text" name="newsletter" id="tip_newsletter_input" list="newsletter" autocomplete=off required>
+					</form>
+				</div>
+            </div>
+            
+		</div>
+	</div>
+    
+    
+    <div id="wrapper-copyright">
+		<div class="copyright">
+    		<div class="copy-text object">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>
+    		
+			<div class="wrapper-navbouton">
+    			<div class="google object">g</div>
+    			<div class="facebook object">f</div>
+    			<div class="linkin object">i</div>
+    			<div class="dribbble object">d</div>
+    		</div>
+    	</div>
+    </div>
 
 </div>
 
@@ -1373,21 +1425,21 @@ textarea {
 	<script type="text/javascript" src="js/fastclick.min.js"></script>
 	<script type="text/javascript" src="js/jquery.flip.min.js"></script>
 	<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
-	<script type="text/javascript" src="js/jquery.animate-shadow-min.js"></script>
-
+	<script type="text/javascript" src="js/jquery.animate-shadow-min.js"></script>    
+	
 	<script>
+	
 
-
-
+	
 $(document).ready(function() {
 		$.localScroll();
 		$(".cache").delay(1000).fadeOut(500);
-
+		
 		$("#wrapper-header").delay(1500).animate({opacity:'1',width:'100%'},500);
 		$("#wrapper-navbar").delay(2000).animate({opacity:'1',height:'60px'},500);
-
+		
 		$("#main-container-image").delay(2500).animate({opacity:'1'},500);
-
+		
 	});
 
 /*TRANSITION PAGE*/
@@ -1426,7 +1478,7 @@ window.addEventListener('scroll', function() {
 	}, 200);
 
 }, false);
-
+ 
   /* BOUTON MENU */
 
 $(document).on('touchstart mouseover', '#stripes', function(event){
@@ -1434,8 +1486,8 @@ $(document).on('touchstart mouseover', '#stripes', function(event){
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#stripes").stop().animate({scale:'1.2',opacity:'0.5'},300);
+			
+			   $("#stripes").stop().animate({scale:'1.2',opacity:'0.5'},300);	
 
             event.handled = true;
         } else {
@@ -1444,12 +1496,12 @@ $(document).on('touchstart mouseover', '#stripes', function(event){
 });
 
 $(document).on('touchend mouseout', '#stripes', function(event){
-
+	
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#stripes").stop().animate({scale:'1',opacity:'1'},300);
+			
+			   $("#stripes").stop().animate({scale:'1',opacity:'1'},300);	
 
             event.handled = true;
         } else {
@@ -1462,8 +1514,8 @@ $(document).on('touchend mouseout', '#stripes', function(event){
 var MENUSIDEOPEN = document.getElementById('stripes');
 
 MENUSIDEOPEN.addEventListener('click', function() {
-			   $("#main-container-menu").stop().animate({left:'0'},300);
-});
+			   $("#main-container-menu").stop().animate({left:'0'},300);	
+}); 
 
 /* BOUTON CROSS */
 
@@ -1472,8 +1524,8 @@ $(document).on('touchstart mouseover', '#cross-menu', function(event){
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#cross-menu").stop().animate({scale:'1.2',opacity:'0.5'},300);
+			
+			   $("#cross-menu").stop().animate({scale:'1.2',opacity:'0.5'},300);	
 
             event.handled = true;
         } else {
@@ -1482,12 +1534,12 @@ $(document).on('touchstart mouseover', '#cross-menu', function(event){
 });
 
 $(document).on('touchend mouseout', '#cross-menu', function(event){
-
+	
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#cross-menu").stop().animate({scale:'1',opacity:'1'},300);
+			
+			   $("#cross-menu").stop().animate({scale:'1',opacity:'1'},300);	
 
             event.handled = true;
         } else {
@@ -1500,8 +1552,8 @@ $(document).on('touchend mouseout', '#cross-menu', function(event){
 var MENUSIDECLOSE = document.getElementById('cross-menu');
 
 MENUSIDECLOSE.addEventListener('click', function() {
-			   $("#main-container-menu").stop().animate({'left':'-100%'},300);
-});
+			   $("#main-container-menu").stop().animate({'left':'-100%'},300);	
+}); 
 
 /* BOUTON MENU ARROW-2 */
 
@@ -1510,8 +1562,8 @@ $(document).on('touchstart mouseover', '#wrapper-title-2', function(event){
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#fleche-nav-2").stop().animate({rotate: '90deg',opacity:'1'},300);
+			
+			   $("#fleche-nav-2").stop().animate({rotate: '90deg',opacity:'1'},300);	
 
             event.handled = true;
         } else {
@@ -1520,12 +1572,12 @@ $(document).on('touchstart mouseover', '#wrapper-title-2', function(event){
 });
 
 $(document).on('touchend mouseout', '#wrapper-title-2', function(event){
-
+	
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#fleche-nav-2").stop().animate({rotate: '0deg',opacity:'0.5'},300);
+			
+			   $("#fleche-nav-2").stop().animate({rotate: '0deg',opacity:'0.5'},300);	
 
             event.handled = true;
         } else {
@@ -1540,8 +1592,8 @@ $(document).on('touchstart mouseover', '#wrapper-title-3', function(event){
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#fleche-nav-3").stop().animate({rotate: '90deg',opacity:'1'},300);
+			
+			   $("#fleche-nav-3").stop().animate({rotate: '90deg',opacity:'1'},300);	
 
             event.handled = true;
         } else {
@@ -1550,12 +1602,12 @@ $(document).on('touchstart mouseover', '#wrapper-title-3', function(event){
 });
 
 $(document).on('touchend mouseout', '#wrapper-title-3', function(event){
-
+	
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#fleche-nav-3").stop().animate({rotate: '0deg',opacity:'0.5'},300);
+			
+			   $("#fleche-nav-3").stop().animate({rotate: '0deg',opacity:'0.5'},300);	
 
             event.handled = true;
         } else {
@@ -1570,8 +1622,8 @@ $(document).on('touchstart mouseover', '#stripes', function(event){
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#stripes").stop().animate({scale:'1.2',opacity:'0.5'},300);
+			
+			   $("#stripes").stop().animate({scale:'1.2',opacity:'0.5'},300);	
 
             event.handled = true;
         } else {
@@ -1580,12 +1632,12 @@ $(document).on('touchstart mouseover', '#stripes', function(event){
 });
 
 $(document).on('touchend mouseout', '#stripes', function(event){
-
+	
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#stripes").stop().animate({scale:'1',opacity:'1'},300);
+			
+			   $("#stripes").stop().animate({scale:'1',opacity:'1'},300);	
 
             event.handled = true;
         } else {
@@ -1600,8 +1652,8 @@ $(document).on('touchstart mouseover', '#oldnew-next', function(event){
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#oldnew-next").stop().animate({scale:'1.2',opacity:'0.5'},300);
+			
+			   $("#oldnew-next").stop().animate({scale:'1.2',opacity:'0.5'},300);	
 
             event.handled = true;
         } else {
@@ -1610,12 +1662,12 @@ $(document).on('touchstart mouseover', '#oldnew-next', function(event){
 });
 
 $(document).on('touchend mouseout', '#oldnew-next', function(event){
-
+	
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#oldnew-next").stop().animate({scale:'1',opacity:'1'},300);
+			
+			   $("#oldnew-next").stop().animate({scale:'1',opacity:'1'},300);	
 
             event.handled = true;
         } else {
@@ -1630,8 +1682,8 @@ $(document).on('touchstart mouseover', '#oldnew-prev', function(event){
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#oldnew-prev").stop().animate({scale:'1.2',opacity:'0.5'},300);
+			
+			   $("#oldnew-prev").stop().animate({scale:'1.2',opacity:'0.5'},300);	
 
             event.handled = true;
         } else {
@@ -1640,12 +1692,12 @@ $(document).on('touchstart mouseover', '#oldnew-prev', function(event){
 });
 
 $(document).on('touchend mouseout', '#oldnew-prev', function(event){
-
+	
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#oldnew-prev").stop().animate({scale:'1',opacity:'1'},300);
+			
+			   $("#oldnew-prev").stop().animate({scale:'1',opacity:'1'},300);	
 
             event.handled = true;
         } else {
@@ -1661,8 +1713,8 @@ $(document).on('touchstart mouseover', '#logo', function(event){
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#logo").stop().animate({scale:'1.1',opacity:'0.5'},300);
+			
+			   $("#logo").stop().animate({scale:'1.1',opacity:'0.5'},300);	
 
             event.handled = true;
         } else {
@@ -1671,12 +1723,12 @@ $(document).on('touchstart mouseover', '#logo', function(event){
 });
 
 $(document).on('touchend mouseout', '#logo', function(event){
-
+	
         event.stopPropagation();
         event.preventDefault();
         if(event.handled !== true) {
-
-			   $("#logo").stop().animate({scale:'1',opacity:'1'},300);
+			
+			   $("#logo").stop().animate({scale:'1',opacity:'1'},300);	
 
             event.handled = true;
         } else {
@@ -1687,7 +1739,7 @@ $(document).on('touchend mouseout', '#logo', function(event){
 
 
 /*FORMULAIRE NEWSLETTER*/
-
+	
 $("form").on("submit", function(event) {
   event.preventDefault();
   $.post("/burstfly/form-burstfly-modified.asp",$("form").serialize(), function(data) {//alert(data);

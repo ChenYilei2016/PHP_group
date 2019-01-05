@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-21 19:33:38
+Date: 2019-01-05 10:47:11
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -42,7 +42,7 @@ CREATE TABLE `log` (
   `log_info` varchar(1024) DEFAULT NULL,
   `log_createtime` int(15) DEFAULT NULL,
   PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of log
@@ -63,6 +63,11 @@ INSERT INTO `log` VALUES ('20', 'root', '用户登陆成功', '1545386907');
 INSERT INTO `log` VALUES ('21', 'root', '用户添加一条生物记录:', '1545387012');
 INSERT INTO `log` VALUES ('22', 'root', '用户删除一条生物记录:', '1545387097');
 INSERT INTO `log` VALUES ('23', 'root', '用户添加一条生物记录:', '1545387311');
+INSERT INTO `log` VALUES ('24', 'root', '用户登陆成功', '1546088467');
+INSERT INTO `log` VALUES ('25', 'root', '用户登陆成功', '1546319160');
+INSERT INTO `log` VALUES ('26', 'root', '用户登陆成功', '1546497305');
+INSERT INTO `log` VALUES ('27', 'root', '用户登陆成功', '1546497333');
+INSERT INTO `log` VALUES ('28', 'root', '用户登陆成功', '1546652250');
 
 -- ----------------------------
 -- Table structure for `place`
@@ -101,9 +106,8 @@ CREATE TABLE `plant` (
 -- ----------------------------
 -- Records of plant
 -- ----------------------------
-INSERT INTO `plant` VALUES ('1', '1', '1', '空心莲子草', '呈半灌木，高0.8～2.5米。茎紫色，叶对生、卵状三角形、棱形，边缘具粗锯齿。头状花序，排成伞房状，总苞片三四层，小花白色。', '有性或无性繁殖，每株可年产瘦果1万粒左右，瘦果五棱形。具冠毛，藉冠毛随风传播。根状茎发达，可依靠强大的根状茎快速扩展蔓延。', null, '1544157762');
-INSERT INTO `plant` VALUES ('2', '1', '1', '豚草', '一年生草木，高20～250厘米。茎直立，具棱，多分枝，下部叶对生，上部叶互生，叶片三角形，1～3回羽状深裂。头状花序单性，雌雄同株；约50～60个在枝端排列成总状，花冠淡黄色，总苞倒卵形倒圆锥形，囊状，无花冠与冠毛，花柱2，丝状，伸出总苞外。', '恶性杂草，对禾木科、菊科等植物有抑制、排斥作用。', null, '1544009971');
-INSERT INTO `plant` VALUES ('3', '1', '1', '1', '1', '1', 'upload/1545387311.jpg', '1545387311');
+INSERT INTO `plant` VALUES ('1', '1', '1', '空心莲子草', '呈半灌木，高0.8～2.5米。茎紫色，叶对生、卵状三角形、棱形，边缘具粗锯齿。头状花序，排成伞房状，总苞片三四层，小花白色。', '有性或无性繁殖，每株可年产瘦果1万粒左右，瘦果五棱形。具冠毛，藉冠毛随风传播。根状茎发达，可依靠强大的根状茎快速扩展蔓延。', 'upload/1.jpg', '1544157762');
+INSERT INTO `plant` VALUES ('2', '1', '1', '豚草', '一年生草木，高20～250厘米。茎直立，具棱，多分枝，下部叶对生，上部叶互生，叶片三角形，1～3回羽状深裂。头状花序单性，雌雄同株；约50～60个在枝端排列成总状，花冠淡黄色，总苞倒卵形倒圆锥形，囊状，无花冠与冠毛，花柱2，丝状，伸出总苞外。', '恶性杂草，对禾木科、菊科等植物有抑制、排斥作用。', 'upload/2.jpg', '1544009971');
 
 -- ----------------------------
 -- Table structure for `user`
