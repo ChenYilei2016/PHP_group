@@ -23,16 +23,6 @@
                 <span class="caret caret-tp hidden-xs"></span>
             </a>
             <ul class="dropdown-menu list-group dropdown-persist w250" role="menu">
-                <li class="list-group-item">
-                    <a href="#" class="animated animated-short fadeInUp">
-                        <span class="fa fa-user"></span> 个人信息
-                        <span class="label label-warning"></span>
-                    </a>
-                </li>
-                <li class="list-group-item">
-                    <a href="#" class="animated animated-short fadeInUp">
-                        <span class="fa fa-gear"></span> 设置密码 </a>
-                </li>
                 <li class="dropdown-footer">
                     <a href="logout.php" class="">
                         <span class="fa fa-power-off pr5"></span> 退出 </a>

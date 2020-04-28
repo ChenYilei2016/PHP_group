@@ -7,9 +7,21 @@
  */
     include_once("../inc_header.php");
 
+
+
+if(empty($_GET['searchword'])){
     $plant_id = $_GET['plant_id'];
     $sql_ = 'select * from plant where plant_id = '.$plant_id;
     $result=  mysqli_query($conn,$sql_);
+}else{
+    //有搜索数据
+    $searchword = $_GET['searchword'];
+    $sql = 'select * from plant join category on plant.category_id = category.category_id join place on place.place_id = plant.place_id '.
+        'where plant_name like \'%'.$searchword.'%\' or plant_bad like \'%'.$searchword.'%\' or plant_identity like \'%'.$searchword.'%\'';
+    $result = mysqli_query($conn,$sql);
+}
+
+
     if (!$result) {
 
         printf("Error: %s\n", mysqli_error($conn));

@@ -7,11 +7,7 @@ $place_id = $_POST['place_id'];
 $place_name=$_POST['place_name'];
 
 $sql = "update place set place_name ="."'".$place_name."'"."where place_id=".$place_id;
-if(mysqli_query($conn,$sql)){
-    echo "保存数据成功";
-}else{
-    echo "保存数据失败".$sql;
-}
+mysqli_query($conn,$sql);
 $href = 'place_list.php';
 $sql_ = "insert into log (log_user,log_info,log_createtime) values ('".$_SESSION["username"]."','"."用户更新一个地区:"."',".time().") ";//插入日志
 mysqli_query($conn,$sql_);

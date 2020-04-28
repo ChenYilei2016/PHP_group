@@ -7,11 +7,7 @@ $category_id = $_POST['category_id'];
 $category_name=$_POST['category_name'];
 
 $sql = "update category set category_name ="."'".$category_name."'"."where category_id=".$category_id;
-if(mysqli_query($conn,$sql)){
-    echo "保存数据成功";
-}else{
-    echo "保存数据失败".$sql;
-}
+mysqli_query($conn,$sql);
 $href = 'category_list.php';
 
 $sql_ = "insert into log (log_user,log_info,log_createtime) values ('".$_SESSION["username"]."','"."用户更新一条分类:"."',".time().") ";//插入日志

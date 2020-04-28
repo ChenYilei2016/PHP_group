@@ -6,8 +6,11 @@
  * Time: 11:10
  */
 include_once("../inc_header.php");
-$sql = 'select * from plant';
-$result = mysqli_query($conn,$sql);
+
+
+
+ $sql = 'select * from plant';
+ $result = mysqli_query($conn,$sql);
 ?>
 
 
@@ -17,7 +20,7 @@ $result = mysqli_query($conn,$sql);
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>农林外来危害物种展示</title>
+    <title>农林外来危害物种</title>
 
     <!-- Behavioral Meta Data -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -40,14 +43,20 @@ $result = mysqli_query($conn,$sql);
 
 <div id="wrapper-header">
     <div id="main-header" class="object">
-        <div class="logo"><a style="color:white;">农林外来危害物种展现</a></div>
-
+        <div class="logo"><a style="color:white;">农林外来危害物种</a></div>
+        
         <div id="main_tip_search">
-            <form>
-                <input type="text" name="search" id="tip_search_input" list="search" placeholder="和后台的搜索一样懒的弄" autocomplete=off required>
+            <form action="details.php" method="get">
+
+                <input type="text" name="searchword" id="tip_search_input" list="searchword" value="<?=empty($_GET['searchword'])?'':$_GET['searchword'] ?>" placeholder="物种搜索" autocomplete=off required>
+
             </form>
+
         </div>
+
         <div id="stripes"></div>
+        
+
     </div>
 </div>
 
@@ -173,7 +182,7 @@ $result = mysqli_query($conn,$sql);
             </div>
             <div id="row-3f">
                 <div class="text-row-1f">
-                    <span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">好像没什么好写的</span><br>好像没什么好写的
+                    <span style="font-weight:600;font-size:15px;color:#666;line-height:250%;text-transform:uppercase;letter-spacing:1.5px;">农林外来危害物种前台</span><br>农林外来危害物种前台
                 </div>
             </div>
         </div>
@@ -181,8 +190,12 @@ $result = mysqli_query($conn,$sql);
 
 
     <div id="wrapper-copyright">
+
         <div class="copyright">
-            <div class="copy-text object">Copyright &copy; 2016.Company name All rights reserved </div>
+            <div class="copy-text object">
+                Copyright &copy; 2016.Company name All rights reserved
+                 <a  style="color: white"  href="..\login.php">&nbsp;&nbsp;&nbsp;&nbsp;后台登录</a> 
+            </div>
 
             <div class="wrapper-navbouton">
                 <div class="google object">g</div>

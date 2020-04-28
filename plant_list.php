@@ -81,7 +81,7 @@ $result = mysqli_query($conn,$sql);
                                     <form method="GET" action="plant_list.php" class="navbar-form navbar-right" role="search">
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="searchword" value="<?=empty($_GET['searchword'])?'':$_GET['searchword'] ?>"/>
-                                        </div> <button type="submit" class="btn btn-info">查询关键字</button>
+                                        </div> <button type="submit" class="btn btn-info">物种搜索</button>
                                     </form>
                                 </div>
                             </div>

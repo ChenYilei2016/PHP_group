@@ -53,9 +53,16 @@ $result = mysqli_query($conn,$sql);
             <div class="tray tray-center">
                 <!-- Begin: Content Header -->
                 <div class="content-header">
-                    <h1>没写东西 主显示页</h1>
-                    <h1>李可以用右边的选项进行页面跳转</h1>
+                    <h2>农林外来危害物种后台</h2>
+                     <!--                            搜索-->
+                      <form method="GET" action="plant_list.php" class="" role="search">
+                    <div class="form-group">
+                    <input type="text" class="form-control" name="searchword" value="<?=empty($_GET['searchword'])?'':$_GET['searchword'] ?>"/>
+                    </div>
+                    <button type="submit" class="btn btn-info">物种搜索</button>
+
                     <p class="lead"></p>
+                </form>
                 </div>
                     <!-- end: .admin-form -->
             </div>

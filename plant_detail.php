@@ -117,9 +117,9 @@ $row = mysqli_fetch_array($result);
                               <!-- end section -->
 
                               <!-- end .form-body section -->
-                              <div class="panel-footer text-right">
+                             
                                   <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
-                              </div>
+                             
                               <!-- end .form-footer section -->
 
                           </div>

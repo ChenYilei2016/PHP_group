@@ -6,11 +6,7 @@ include_once("login_check.php");
 $sql = "insert into category (category_name) 
 		values(' ".$_POST['name']."')";
 
-if(mysqli_query($conn,$sql)){
-    echo "保存数据成功";
-}else{
-    echo "保存数据失败".$sql;
-}
+mysqli_query($conn,$sql);
 
 $sql_ = "insert into log (log_user,log_info,log_createtime) values ('".$_SESSION["username"]."','"."用户添加一条分类:"."',".time().") ";//插入日志
 mysqli_query($conn,$sql_);

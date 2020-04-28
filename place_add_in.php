@@ -6,11 +6,7 @@ include_once("login_check.php");
 $sql = "insert into place (place_name) 
 		values(' ".$_POST['place_name']."')";
 
-if(mysqli_query($conn,$sql)){
-    echo "保存数据成功";
-}else{
-    echo "保存数据失败".$sql;
-}
+$result = mysqli_query($conn,$sql);
 $href = 'place_list.php';
 
 $sql_ = "insert into log (log_user,log_info,log_createtime) values ('".$_SESSION["username"]."','"."用户添加一条地区:"."',".time().") ";//插入日志

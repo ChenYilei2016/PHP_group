@@ -10,13 +10,23 @@ $category_id =$_POST['category_id'];
 $place_id =$_POST['place_id'];
 $plant_createtime = time();
 
-$s = "delete from plant where plant_id = ".$plant_id;
-mysqli_query($conn,$s);
-//插入plant表
-$sql = "insert into plant (plant_id,category_id,place_id,plant_name,plant_identity,plant_bad,plant_createtime) VALUES (".$plant_id.",".$category_id.",".$place_id.",'".$plant_name."','".$plant_identity."','".$plant_bad."',".$plant_createtime.")";
+// $s = "delete from plant where plant_id = ".$plant_id;
+// mysqli_query($conn,$s);
+// //插入plant表
+// $sql = "insert into plant (plant_id,category_id,place_id,plant_name,plant_identity,plant_bad,plant_createtime) VALUES (".$plant_id.",".$category_id.",".$place_id.",'".$plant_name."','".$plant_identity."','".$plant_bad."',".$plant_createtime.")";
 
+$sql="UPDATE plant 
+SET category_id = ".$category_id.",
+place_id = ".$place_id.",
+plant_name = '".$plant_name."',
+plant_identity = '".$plant_identity."',
+plant_bad = '".$plant_bad."',
+plant_createtime = ".$plant_createtime." 
+WHERE
+    plant_id = ".$plant_id."";
+    
 if(mysqli_query($conn,$sql)){
-    echo "保存数据成功";
+    echo "";
 }else{
     echo "保存数据失败".$sql;
 }

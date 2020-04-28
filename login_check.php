@@ -9,11 +9,5 @@
     session_start();
 
     if(empty($_SESSION['username'])){
-        echo "<script>window.location.href=\"login.php\";</script>";
-    }else{
-        //不干
+    	header("Location: login.php");
     }
-
-?>
-
-

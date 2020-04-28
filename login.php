@@ -15,12 +15,19 @@
 			<form class="form" >
 				<input id="username" type="text" placeholder="Username">
 				<input id="password" type="password" placeholder="Password">
-				<button type="submit" id="login-button">Login</button>
+				<button type="submit" id="login-button">登录</button>
 			</form>
+            <form class="form" action="front/index.php">
+                <button >返回前台</button>
+            </form>
+
 		</div>
+
 		<ul class="bg-bubbles">
 		</ul>
+
 	</div>
+
 </div>
 <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script>

@@ -23,11 +23,7 @@ if(!empty($_FILES)){
 $sql = "insert into plant (category_id,place_id,plant_name,plant_identity,plant_bad,plant_createtime,plant_image) VALUES (".$category_id.",".$place_id.",'".$plant_name."','".$plant_identity."','".$plant_bad."',"
   .$plant_createtime.",'".$image_name."'".")";
 
-if(mysqli_query($conn,$sql)){
-    echo "保存数据成功";
-}else{
-    echo "保存数据失败".$sql;
-}
+mysqli_query($conn,$sql);
 $href = 'plant_list.php';
 
 $sql_ = "insert into log (log_user,log_info,log_createtime) values ('".$_SESSION["username"]."','"."用户添加一条生物记录:"."',".time().") ";//插入日志

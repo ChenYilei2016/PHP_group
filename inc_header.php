@@ -2,7 +2,7 @@
 	header("Content-type: text/html; charset=utf-8");
 	$host = "localhost";
 	$dbuser = "root";
-	$dbpwd = "root";
+	$dbpwd = "";
 
 	$conn = mysqli_connect($host,$dbuser,$dbpwd);
 

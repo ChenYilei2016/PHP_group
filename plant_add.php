@@ -147,10 +147,11 @@ $result_place= mysqli_query($conn,$sql_place);
                                 </div>
                                 <div class="section-divider mt20 mb40">
                                     <span> 选择生物图片 </span>
+                                    <div class="section" id="spy3">
+                                        <input type="file" class="button bg-blue margin-left" name="plant_image" id="image1" value="+ 浏览上传"  >
+                                    </div>
                                 </div>
-                                <div class="section" id="spy3">
-                                    <input type="file" class="button bg-blue margin-left" name="plant_image" id="image1" value="+ 浏览上传"  style="float:left;" >
-                                </div>
+                                <br><br><br><br>
                                 <!-- .section-divider -->
                                 <div class="section row" id="items">
                                     <div>
@@ -159,7 +160,9 @@ $result_place= mysqli_query($conn,$sql_place);
                                             <button type="submit" class="button"> 提交 </button>
                                             <button type="button" class="button" onclick="javascript:window.history.go(-1);"> 返回 </button>
                                         </div>
-                                        <!-- end .form-footer section -->
+                                    </div>
+                                </div>
+                                <!-- end .form-footer section -->
                         </form>
 
                     </div>

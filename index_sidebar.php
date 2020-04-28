@@ -14,23 +14,6 @@
 
         <!-- Start: Sidebar Header -->
         <header class="sidebar-header">
-
-            <!-- Sidebar Widget - Author -->
-            <div class="sidebar-widget author-widget">
-                <div class="media">
-                    <a class="media-left" href="#">
-                        <img src="assets/img/avatars/3.jpg" class="img-responsive">
-                    </a>
-                    <div class="media-body">
-                        <div class="media-author"><?php echo $_SESSION['username'] ;?></div>
-                        <div class="media-links">
-                            <a href="login.php">退出</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
             <!-- Sidebar Widget - Search (hidden) -->
             <div class="sidebar-widget search-widget hidden">
                 <div class="input-group">
@@ -62,8 +45,8 @@
                 <a class="btn btn-info" href="plant_add.php"><span class="icon-caret-right"></span>添加生物</a>
             </ul>
             <h2><span class="icon-pencil-square-o"></span>&nbsp;&nbsp;日志管理</h2>
-            <ul>
-                <li><a class="btn btn-info" href="Logger_list.php" ><span class="icon-caret-right"></span>日志列表</a></li>
+            <ul style="display:block">
+                <a class="btn btn-info" href="Logger_list.php" ><span class="icon-caret-right"></span>日志列表</a>
             </ul>
         </div>
         <!-- End: Sidebar Menu -->

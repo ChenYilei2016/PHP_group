@@ -10,12 +10,6 @@ include_once("login_check.php");
 	$deleteId = $_GET['place_id'];
 	$sql = 'delete from place where place_id ='.$deleteId;
 	$result = mysqli_query($conn,$sql);
-
-	if( $result ){
-		echo "删除数据成功";
-	}else{
-		echo "删除数据失败";
-	}
 	$href = 'place_list.php';
 $sql_ = "insert into log (log_user,log_info,log_createtime) values ('".$_SESSION["username"]."','"."用户删除一个地区:"."',".time().") ";//插入日志
 mysqli_query($conn,$sql_);

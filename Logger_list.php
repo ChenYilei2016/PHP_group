@@ -5,7 +5,7 @@ include_once ("login_check.php");
 $sql = 'select * from log';
 $result_data = mysqli_query($conn,$sql);
 //分页开始
-$pageSize = 5; //5页的大小
+$pageSize = 10; //10页的大小
 $pageTotalElement = mysqli_num_rows($result_data);
 $pageTotalPages = $pageTotalElement % $pageSize == 0 ? (int)($pageTotalElement/$pageSize) : (int)($pageTotalElement/$pageSize) + 1 ;
 
@@ -77,7 +77,7 @@ $nextPage = $page+1> $pageTotalPages ? $pageTotalPages:$page+1;
 
                 <!-- Begin: Content Header -->
                 <div class="content-header">
-                    <h2> 地区列表</h2>
+                    <h2> 日志管理</h2>
                     <p class="lead"></p>
                 </div>
                 <!-- message listing panel -->

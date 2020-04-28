@@ -82,7 +82,8 @@
                     <!-- end section -->
                   <!-- end .form-body section -->
                   <div class="panel-footer text-right">
-                    <button type="submit" class="button"> 保存 </button>
+                    <input type="submit" name="保存" class="button">
+                    <!-- <button type="submit" class="button"> 保存 </button> -->
                     <button type="button" class="button" onclick="javascript:history.go(-1);"> 返回 </button>
                   </div>
                   <!-- end .form-footer section -->
